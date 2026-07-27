@@ -1,8 +1,26 @@
 aid: intersectent
-name: Intersectent
-description: 'Intersectent is a company surfaced as a portfolio company of norwest-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead
-  awaiting the enrichment pipeline.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/intersectent.png
+name: Intersect ENT
+description: 'Intersect ENT (the "Intersectent" stub) was a Menlo Park, California medical-device
+  company that developed steroid-releasing dissolvable sinus implants — the PROPEL and PROPEL
+  mini families and the SINUVA implant — to improve outcomes for chronic sinusitis and ear,
+  nose and throat surgery. Backed by Norwest Venture Partners (Series D lead), Kleiner Perkins,
+  U.S. Venture Partners and Medtronic, it went public and was acquired by Medtronic on
+  2022-05-13 for roughly $1.1B, with the FTC-mandated divestiture of its Fiagon products.
+  It is a physical medical-device business with no developer platform, public API, SDK, or
+  developer portal; intersectent.com now redirects to Medtronic''s PROPEL product page. This
+  record is retained for lineage from the Norwest portfolio harvest and is not an API provider.'
 url: https://raw.githubusercontent.com/api-evangelist/intersectent/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +28,24 @@ x-backed-by:
 - norwest-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: medtronic
+x-acquired-date: '2022-05-13'
+x-api-surface: none
+x-enrichment-note: 'Not an API provider — medical-device (sinus implant) company acquired by
+  Medtronic in 2022. No OpenAPI/SDK/developer surface exists to enrich; do not re-run the API
+  enrichment pipeline against this repo.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Unknown
+- Medical Devices
+- MedTech
+- Healthcare
+- Ear Nose and Throat
+- Sinus Implants
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +55,10 @@ maintainers:
 common:
 - type: Website
   url: https://intersectent.com
+- type: Acquirer
+  url: https://news.medtronic.com/2022-05-13-Medtronic-completes-acquisition-of-Intersect-ENT
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
